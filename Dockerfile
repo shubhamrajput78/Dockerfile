@@ -1,4 +1,5 @@
 FROM ubuntu
+LABEL Usage="docker run -it --rm -p 8080:80 -p 6033:3306 lamlp:v1.0 bash"
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install nano curl software-properties-common -y
 RUN apt-get install apache2 -y
